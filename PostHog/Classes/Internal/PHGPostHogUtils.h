@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
-#import <PostHog/PHGSerializableValue.h>
+#import "PHGSerializableValue.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 

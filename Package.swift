@@ -11,7 +11,16 @@ let package = Package(
         .target(
             name: "PostHog",
             dependencies: [],
-			path: "PostHog"
+            path: "PostHog",
+            cSettings: [
+                .headerSearchPath("PostHog"),
+                .headerSearchPath("Classes"),
+                .headerSearchPath("Classes/Internal"),
+                .headerSearchPath("Classes/Crypto"),
+                .headerSearchPath("Classes/Payloads"),
+                .headerSearchPath("Classes/Middlewares"),
+                .headerSearchPath("Vendor")
+            ]
 			),
 //        .testTarget(
 //            name: "PostHogTests",
